@@ -29,7 +29,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "parcel serve index.html"
+    "start": "parcel serve index.html",
+    "postinstall": "cd node_modules/automerge && npm install && npm run build && cd ../.."
   },
   "peerDependencies": {
     "react": ">=16"
